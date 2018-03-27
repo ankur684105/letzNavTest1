@@ -33,13 +33,13 @@ jobs:
       - 
         run: 
           command: |
-              sudo wget https://letznav-testing.herokuapp.com/api/public/admin/extensions/editor/letznav_editor.crx -P /opt/google/chrome
+              sudo wget https://ln-testing.herokuapp.com/api/public/admin/extensions/editor/letznav_editor.crx -P /opt/google/chrome
               sudo mkdir /opt/google/chrome/extensions
           name: "Downloading latest version of Letznav editor extension"
       - 
         run: 
           command: |
-              sudo wget https://letznav-testing.herokuapp.com/api/public/admin/extensions/player/letznav_player.crx -P /opt/google/chrome
+              sudo wget https://ln-testing.herokuapp.com/api/public/admin/extensions/player/letznav_player.crx -P /opt/google/chrome
           name: "Downloading latest version of Letznav player extension"
       - 
         run: 
