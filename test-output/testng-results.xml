@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="9" total="11" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65657" started-at="2018-03-27T10:52:53Z" finished-at="2018-03-27T10:53:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65657" started-at="2018-03-27T10:52:53Z" finished-at="2018-03-27T10:53:59Z">
+      <class name="letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression">
+        <test-method status="PASS" signature="openBrowserAndInstallExtensions()[pri:0, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="openBrowserAndInstallExtensions" is-config="true" duration-ms="32940" started-at="2018-03-27T10:52:53Z" finished-at="2018-03-27T10:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndInstallExtensions -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-03-27T10:53:26Z" finished-at="2018-03-27T10:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="editorLogin()[pri:1, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="editorLogin" duration-ms="8961" started-at="2018-03-27T10:53:26Z" finished-at="2018-03-27T10:53:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editorLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="tearDown" is-config="true" duration-ms="526" started-at="2018-03-27T10:53:35Z" finished-at="2018-03-27T10:53:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editorLogin status=SUCCESS method=letzNavEditorRegression.editorLogin()[pri:1, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-27T10:53:35Z" finished-at="2018-03-27T10:53:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testAnnouncements()[pri:11, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="testAnnouncements" duration-ms="20650" started-at="2018-03-27T10:53:35Z" finished-at="2018-03-27T10:53:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAnnouncements -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="tearDown" is-config="true" duration-ms="80" started-at="2018-03-27T10:53:56Z" finished-at="2018-03-27T10:53:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAnnouncements status=SUCCESS method=letzNavEditorRegression.testAnnouncements()[pri:11, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression@49c43f4e]" name="afterClass" is-config="true" duration-ms="2466" started-at="2018-03-27T10:53:56Z" finished-at="2018-03-27T10:53:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- letzNavTestFrameWork.letzNavTestScripts.letzNavEditorRegression -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

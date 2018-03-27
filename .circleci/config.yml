@@ -1,0 +1,69 @@
+--- 
+jobs: 
+  build: 
+    docker: 
+      - 
+        image: "circleci/openjdk:8-jdk-browsers"
+    environment: 
+      MAVEN_OPTS: "-Xmx3200m"
+    steps: 
+      - checkout
+      - 
+        restore_cache: 
+          keys: 
+            - "v1-dependencies-{{ checksum \"pom.xml\" }}"
+            - v1-dependencies-
+      - 
+        run: "mvn dependency:go-offline"
+
+      - 
+        run: 
+          command: |
+              sudo wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+              sudo unzip chromedriver_linux64.zip
+              sudo rm chromedriver_linux64.zip
+              sudo mv chromedriver /usr/bin/
+              sudo chmod 777 /usr/bin/chromedriver
+              sudo apt-get install libxi6 libgconf-2-4
+              sudo apt-get -y install xvfb gtk2-engines-pixbuf
+              sudo apt-get -y install xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable
+              sudo apt-get install xvfb
+              sudo apt-get -y install imagemagick x11-apps
+          name: "Install latest version of ChromeDriver Sample"
+      - 
+        run: 
+          command: |
+              sudo wget https://letznav-testing.herokuapp.com/api/public/admin/extensions/editor/letznav_editor.crx -P /opt/google/chrome
+              sudo mkdir /opt/google/chrome/extensions
+          name: "Downloading latest version of Letznav editor extension"
+      - 
+        run: 
+          command: |
+              sudo wget https://letznav-testing.herokuapp.com/api/public/admin/extensions/player/letznav_player.crx -P /opt/google/chrome
+          name: "Downloading latest version of Letznav player extension"
+      - 
+        run: 
+          command: "Xvfb :0 -ac &"
+          name: "Running X virtual framebuffer"
+      - 
+        run: 
+          command: "export DISPLAY=:99\n"
+          name: "Run Tests"
+      - 
+        save_cache: 
+          key: "v1-dependencies-{{ checksum \"pom.xml\" }}"
+          paths: 
+            - ~/.m2
+      - 
+        run: "mvn clean"
+      - 
+        run: "mvn test"
+      - 
+        store_artifacts: 
+          destination: tr1
+          path: target/surefire-reports
+      - 
+        store_test_results: 
+          path: target/surefire-reports
+    working_directory: ~/circleCiTesting
+version: 2
