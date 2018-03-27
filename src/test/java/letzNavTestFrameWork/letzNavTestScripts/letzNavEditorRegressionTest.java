@@ -59,7 +59,7 @@ public class letzNavEditorRegressionTest {
 		// player = new letzNavPlayer(driver);
 		editor = new letzNavEditor(driver);
 		clarity = new clarityPPM(driver);
-		String testDataFile = System.getProperty("user.dir") + "\\TestData\\Book1.xlsx";
+		String testDataFile = System.getProperty("user.dir") + "/TestData/Book1.xlsx";
 		letzNavExcelReader.setExcelFile(testDataFile, "EmployeeData");
 	}
 
