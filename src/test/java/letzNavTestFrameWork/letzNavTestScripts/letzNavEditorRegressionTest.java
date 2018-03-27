@@ -110,7 +110,7 @@ public class letzNavEditorRegressionTest {
 		}
 	}
 
-	@Test(dataProvider = "data", priority = 2, enabled = true)
+	@Test(dataProvider = "data", priority = 2, enabled = false)
 	public void validateValidation(String xpath, String min, String max, String regExp, String regExpMsg,
 			String custAsr, String custAsrMsg) {
 		try {
@@ -153,7 +153,7 @@ public class letzNavEditorRegressionTest {
 
 	}
 
-	@Test(priority = 4, enabled = true)
+	@Test(priority = 4, enabled = false)
 	public void preLauncherSetUp() {
 		try {
 			driver.findElement(By.xpath("//badge-list/div[@class='top-bar']/div/back-btn/span/span")).click();
