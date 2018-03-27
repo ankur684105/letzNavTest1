@@ -110,7 +110,7 @@ public class letzNavEditorRegressionTest {
 		}
 	}
 
-	@Test(dataProvider = "data", priority = 2, enabled = false)
+	@Test(dataProvider = "data", priority = 2, enabled = true)
 	public void validateValidation(String xpath, String min, String max, String regExp, String regExpMsg,
 			String custAsr, String custAsrMsg) {
 		try {
@@ -135,7 +135,7 @@ public class letzNavEditorRegressionTest {
 		}
 	}
 
-	@Test(dataProvider = "data", priority = 3, enabled = false)
+	@Test(dataProvider = "data", priority = 3, enabled = true)
 	public void validateNavTips(String xpath, String navTipTxt, String navTipName) {
 		try {
 			logs.debug("Validate NavTip Creation");
@@ -153,7 +153,7 @@ public class letzNavEditorRegressionTest {
 
 	}
 
-	@Test(priority = 4, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void preLauncherSetUp() {
 		try {
 			driver.findElement(By.xpath("//badge-list/div[@class='top-bar']/div/back-btn/span/span")).click();
@@ -164,7 +164,7 @@ public class letzNavEditorRegressionTest {
 		}
 	}
 
-	@Test(priority = 5, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void preLauncherTest() {
 		try {
 			editor.clickOnComponent("launchers");
@@ -176,7 +176,7 @@ public class letzNavEditorRegressionTest {
 
 	}
 
-	@Test(dataProvider = "data", priority = 6, dependsOnMethods = "preLauncherTest", enabled = false)
+	@Test(dataProvider = "data", priority = 6, dependsOnMethods = "preLauncherTest", enabled = true)
 	public void validateLaunchers(String elementXpath, String launcherOption, String launcherTxt, String launcherTitle,
 			String linkUrl) {
 		try {
@@ -194,7 +194,7 @@ public class letzNavEditorRegressionTest {
 
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	public void preWorkFlowSetUp() {
 		try {
 		Assert.assertTrue(
@@ -211,7 +211,7 @@ public class letzNavEditorRegressionTest {
 	}
 		
 
-	@Test(dependsOnMethods = "editorLogin", priority = 8, enabled = false)
+	@Test(dependsOnMethods = "editorLogin", priority = 8, enabled = true)
 	public void preWorkFlowTest() {
 		try {
 			Assert.assertTrue(driver.findElement(By.xpath("//bottom-bar")).isDisplayed());
@@ -225,7 +225,7 @@ public class letzNavEditorRegressionTest {
 
 	}
 
-	@Test(dataProvider = "data", priority = 9, enabled = false)
+	@Test(dataProvider = "data", priority = 9, enabled = true)
 	public void validateWorkFlows(String elementXpath, String desc, String advanceOn, String balloonLoc,
 			String markEntryPt) {
 		try {
@@ -243,7 +243,7 @@ public class letzNavEditorRegressionTest {
 
 	}
 
-	@Test(priority = 10, enabled = false)
+	@Test(priority = 10, enabled = true)
 	public void postWorkFlowCreation() {
 		
 		driver.findElement(By.xpath("//flow-view/step-view/div/div/span[@aria-haspopup='true']")).click();
