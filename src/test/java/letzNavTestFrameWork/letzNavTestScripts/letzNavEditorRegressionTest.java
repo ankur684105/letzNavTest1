@@ -254,7 +254,7 @@ public class letzNavEditorRegressionTest {
 		driver.findElement(By.xpath("//back-btn[@backto='admin']/span")).click();
 	}
 	
-	@Test(priority = 11)
+	@Test(priority = 11, enabled = true)
 	public void testAnnouncements() {
 		try {
 		driver.findElement(By.cssSelector("li.home-navigation__announcements")).click();
