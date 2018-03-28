@@ -283,7 +283,9 @@ public class letzNavEditorRegressionTest {
 			test.log(LogStatus.FAIL, "Test Failed and Captured ScreenShot", imagePath);
 			logs.debug("Screen Shot Captured on Failure");
 		}
-		test.log(LogStatus.PASS, "Test Case Passed");
+		String path = letzNavScreenShots.takeScreenshot(driver, testResult.getName());
+		String imagePath = test.addScreenCapture(path);
+		test.log(LogStatus.PASS, "Test Case Passed",imagePath);
 		logs.debug("Test Case Finished");
 		report.endTest(test);
 		report.flush();
