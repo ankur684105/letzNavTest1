@@ -135,7 +135,7 @@ public class letzNavEditorRegressionTest {
 		}
 	}
 
-	@Test(dataProvider = "data", priority = 3, enabled = true)
+	@Test(dataProvider = "data", priority = 3, enabled = false)
 	public void validateNavTips(String xpath, String navTipTxt, String navTipName) {
 		try {
 			logs.debug("Validate NavTip Creation");
