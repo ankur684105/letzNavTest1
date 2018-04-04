@@ -1,12 +1,11 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package com.letzNav.utils;
 
 import org.openqa.selenium.WebDriver;
 
+import com.letzNav.hostApplications.clarityPPM;
+import com.letzNav.modules.letzNavPlayer;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
-import letzNavApplicationsToTest.clarityPPM;
-import letzNavTestFrameWork.letzNavComponents.letzNavPlayer;
 
 public class letzNavConfiguration {
 	WebDriver driver;

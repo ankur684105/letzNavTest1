@@ -17,18 +17,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.letzNav.hostApplications.clarityPPM;
+import com.letzNav.modules.letzNavEditor;
+import com.letzNav.utils.letzNavBrowser;
+import com.letzNav.utils.letzNavExcelReader;
+import com.letzNav.utils.letzNavExtentReports;
+import com.letzNav.utils.letzNavInstaller;
+import com.letzNav.utils.letzNavPropertiesReader;
+import com.letzNav.utils.letzNavScreenShots;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import letzNavApplicationsToTest.clarityPPM;
-import letzNavTestFrameWork.letzNavComponents.letzNavEditor;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavBrowser;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExcelReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExtentReports;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavInstaller;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavPropertiesReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavScreenShots;
 
 public class letzNavEditorRegressionTest {
 	Logger logs;

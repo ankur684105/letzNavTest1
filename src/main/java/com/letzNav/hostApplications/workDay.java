@@ -1,4 +1,4 @@
-package letzNavApplicationsToTest;
+package com.letzNav.hostApplications;
 
 import java.util.concurrent.TimeUnit;
 

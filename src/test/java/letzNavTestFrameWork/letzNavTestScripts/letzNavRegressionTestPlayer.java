@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
-import letzNavTestFrameWork.letzNavComponents.*;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -25,20 +25,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.letzNav.hostApplications.*;
+import com.letzNav.modules.*;
+import com.letzNav.utils.letzNavBrowser;
+import com.letzNav.utils.letzNavCsvData;
+import com.letzNav.utils.letzNavExcelReader;
+import com.letzNav.utils.letzNavExtentReports;
+import com.letzNav.utils.letzNavInstaller;
+import com.letzNav.utils.letzNavPropertiesReader;
+import com.letzNav.utils.letzNavScreenShots;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
-import letzNavApplicationsToTest.*;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavBrowser;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavCsvData;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExcelReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExtentReports;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavInstaller;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavPropertiesReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavScreenShots;
-import letzNavTestFrameWork.letzNavComponents.*;
-import letzNavTestFrameWork.letzNavComponents.letzNavPlayer;
 
 @SuppressWarnings("unused")
 public class letzNavRegressionTestPlayer {
